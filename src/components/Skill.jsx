@@ -6,6 +6,8 @@ import { skill } from '../../Skill'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
+import { useLocation } from 'react-router-dom'
+
 
 
 
@@ -13,13 +15,16 @@ import Navbar from './Navbar'
 
 
 const Skill = () => {
+
+  let location=useLocation();
+
   return (
     <>
 
-    <Navbar/>
+  
     
 
-      <div className='bg-gray-100  h-screen flex flex-col  '>
+      <div className='bg-gray-100  h-auto flex flex-col  '>
 
         <div className='flex justify-center  p-15  gap-6 '>
           <div className=' text-5xl'>Icon</div>
@@ -32,7 +37,7 @@ const Skill = () => {
 
       </div>
 
-      <Footer/>
+    
 
 
     </>

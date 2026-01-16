@@ -3,30 +3,24 @@ import { FaGithub } from "react-icons/fa";
 import { MdOutlinePeopleAlt } from "react-icons/md";
 import Footer from './Footer';
 import { useState } from 'react';
-
 import { useEffect } from 'react';
-
-
-
-
-
-
-
-
+import { useLocation } from 'react-router-dom';
 
 
 
 
 const Contact = () => {
+  let location=useLocation();
 
   const [name, setname] = useState("")
   const [email, setemail] = useState("")
   const [Message, setmessage] = useState("")
   const [form, setform] = useState([])
 
-  useEffect(()=>{
+  /*useEffect(()=>{
     console.log(form)
   },[form])
+  */
 
   
 
@@ -109,8 +103,12 @@ const Contact = () => {
 
 
       </div>
+            
 
-      <Footer />
+
+      
+
+      
     </>
   )
 }

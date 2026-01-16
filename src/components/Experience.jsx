@@ -5,11 +5,17 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 
 
+
 const Experience = () => {
+
+
+  
+
+  
   return (
 
   <>
-  <Navbar/>
+ 
 
 
     <div className='p-[40px] bg-gray-100 h-screen' >
@@ -36,7 +42,9 @@ const Experience = () => {
         </div>
 
     </div>
-    <Footer/>
+     
+
+    
 
     </>
 

@@ -5,14 +5,18 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 
+
 const Project = () => {
+
+  
   return (
 
     <>
-    <Navbar/>
+             
 
 
-    <div className='h-screen bg-gray-100' >
+
+    <div className='  h-auto   bg-gray-100' >
 
       <div className='text-5xl p-10 font-bold flex  justify-center text-blue-600' > Projects</div>
 
@@ -38,8 +42,10 @@ const Project = () => {
 
 
     </div>
+        
 
-    <Footer/>
+
+    
     </>
   )
 }

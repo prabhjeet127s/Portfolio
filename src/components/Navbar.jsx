@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
+
 const Navbar = () => {
+
+
+
+
   return (
     <div>
         <header className='h-[65vh] bg-cover bg-center bg-fixed flex flex-col items-center bg-blue-100'
@@ -28,3 +34,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
