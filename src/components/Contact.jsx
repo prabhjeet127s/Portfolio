@@ -49,11 +49,11 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='    h-screen     bg-blue-900'>    {/*main*/}
+      <div className='   lg:h-screen md:h-auto   bg-blue-900'>    {/*main*/}
 
 
 
-        <div className=' text-4xl text-white  font-semibold text-center p-20     ' >{/*box1*/}
+        <div className=' text-4xl text-white  font-semibold text-center p-20 m-0    ' >{/*box1*/}
           Contact
 
         </div>
