@@ -49,7 +49,7 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='    h-screen     bg-blue-900'>    {/*main*/}
+      <div className='   min-h-screen     bg-blue-900'>    {/*main*/}
 
 
 
@@ -76,7 +76,7 @@ const Contact = () => {
 
           <div className=' min-h-[20rem] flex justify-center flex-wrap pt-10 gap-10 md:gap-40 lg:gap-64 w-full'>  {/*Contact*/}
             <div className='   '>{/*address*/}
-              <h3 className='text-2xl font-semibold  text-white p-7 ' >My Address</h3>
+              <h3 className='text-2xl font-semibold  text-white p-7 bg-blue-900 ' >My Address</h3>
 
               <h3 className='text-gray-100 text-xl p-3'  >Pathankot,India</h3>
               <h3 className='text-gray-100 text-xl p-3' >+91-8837615825</h3>
@@ -84,7 +84,7 @@ const Contact = () => {
 
             </div>
 
-            <div className='' >{/*links*/}
+            <div className='bg-blue-900' >{/*links*/}
               <h4 className='font-semibold text-2xl p-4 text-white' >Social-Links</h4>
               <ul className=' flex gap-4'>
                 <li className='w-10 h-10  '  ><a className='h-9 w-3' href="https://github.com/prabhjeet127s">
