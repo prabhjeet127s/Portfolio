@@ -11,25 +11,25 @@ import { useLocation } from 'react-router-dom';
 
 
 const Contact = () => {
-  const location=useLocation();
+  const location = useLocation();
   console.log(location)
-  
+
 
   const [name, setname] = useState("")
   const [email, setemail] = useState("")
   const [Message, setmessage] = useState("")
   const [form, setform] = useState([])
 
-  
-  useEffect(()=>{
+
+  useEffect(() => {
     console.log(form)
-  },[form])
-  
+  }, [form])
+
 
 
   const handleclick = (e) => {
 
-        e.preventDefault();
+    e.preventDefault();
 
 
     const obj1 = {
@@ -41,10 +41,10 @@ const Contact = () => {
 
     setform((prev) => [...prev, obj1]);
 
-    
-    
+
+
     alert("form sumbit")
-    
+
 
   }
   return (
@@ -69,12 +69,12 @@ const Contact = () => {
                 <input value={name} onChange={(e) => setname(e.target.value)} className='border-b-2 text-gray-100 border-opacity-100 outline-none border-white ' type="text" placeholder='Your Name' />
                 <input value={email} onChange={(e) => setemail(e.target.value)} className='border-b-2  text-gray-100 border-opacity-100 outline-none border-white ' type="text" placeholder='Your Email' />
                 <input value={Message} onChange={(e) => setmessage(e.target.value)} className='border-b-2 text-gray-100   border-opacity-100 outline-none border-white ' type="text" placeholder='Message' />
-                <button   type="submit" className='  hover:bg-white transition border-2 ml-[36%] border-white h-10 w-40 text-l font-medium text-white'>SEND MESSAGE</button>
+                <button type="submit" className='  hover:bg-white transition border-2 ml-[36%] border-white h-10 w-40 text-l font-medium text-white'>SEND MESSAGE</button>
               </form>
             </div>
           </div>
 
-          <div className=' h-80  flex justify-center pt-10 gap-96 w-full'>  {/*Contact*/}
+          <div className=' min-h-[20rem] flex justify-center flex-wrap pt-10 gap-10 md:gap-40 lg:gap-64 w-full'>  {/*Contact*/}
             <div className='   '>{/*address*/}
               <h3 className='text-2xl font-semibold  text-white p-7 ' >My Address</h3>
 
@@ -97,23 +97,23 @@ const Contact = () => {
             </div>
 
           </div>
-          
+
         </div>
 
-        {location.pathname !=  '/'    &&     <Footer/>}
+        {location.pathname != '/' && <Footer />}
 
 
 
 
       </div>
 
-            
 
 
-                          
 
 
-      
+
+
+
     </>
   )
 }
