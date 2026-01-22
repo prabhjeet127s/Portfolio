@@ -6,7 +6,7 @@ import { skill } from '../../Skill'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
-import { useLocation } from 'react-router-dom'
+
 
 
 
@@ -16,7 +16,7 @@ import { useLocation } from 'react-router-dom'
 
 const Skill = () => {
 
-  let location=useLocation();
+  
 
   return (
     <>

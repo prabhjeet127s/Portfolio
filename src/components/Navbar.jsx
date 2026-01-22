@@ -15,7 +15,7 @@ const Navbar = () => {
       >
 
         <nav className=''>
-          <ul className='flex justify-center gap-10  p-10 text-lg  text-white'>
+          <ul className='flex justify-center gap-10  p-10 text-xl  text-white'>
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/skill"}>Skills</Link></li>
             <li><Link to={"/experience"}>Experience</Link></li>

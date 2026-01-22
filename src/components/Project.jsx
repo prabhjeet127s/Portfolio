@@ -18,9 +18,9 @@ const Project = () => {
 
     <div className='  h-auto   bg-gray-100' >
 
-      <div className='text-5xl p-10 font-bold flex  justify-center text-blue-600' > Projects</div>
+      <div className='text-5xl p-10 font-bold flex  justify-center ' > Projects</div>
 
-      <div className='  h-151 p-25  gap-17  grid  grid-cols-4  ' >
+      <div className='  h-auto p-25  gap-17    grid  grid-cols-4  ' >
         {project.map((value) => (
 
 

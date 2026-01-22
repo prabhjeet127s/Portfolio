@@ -16,7 +16,7 @@ const Home = () => {
 
 
     <>
-      <div className=' h-auto  w-screen'>
+      <div className=' h-auto w-screen'>
 
 
         <section className=' flex  flex-col items-center p-11 justify-center gap-7'>

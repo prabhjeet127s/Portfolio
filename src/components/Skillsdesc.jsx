@@ -6,10 +6,10 @@ import React from 'react'
 const Skillsdesc = ({ skill }) => {
     return (
 
-        <div className='p-[10px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 mx-50 m-10 place-items-center '>
+        <div className='p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-20 mx-50 m-10 place-items-center '>
             {skill.map((value) => (
 
-                <div className='w-[11rem]   h-[2.2rem]  border-1 bg-gray-200 rounded-2xl overflow-hidden' >
+                <div className='w-[11rem]     h-[2.2rem]  border-1 bg-gray-200 rounded-2xl overflow-hidden' >
 
                     <div
                         style={{ width: `${value.experience}%`, backgroundColor: value.color }}

@@ -9,28 +9,27 @@ import { useLocation } from 'react-router-dom';
 
 
 
+
 const Contact = () => {
-  let location=useLocation();
+  const location=useLocation();
+  console.log(location)
+  
 
   const [name, setname] = useState("")
   const [email, setemail] = useState("")
   const [Message, setmessage] = useState("")
   const [form, setform] = useState([])
 
-  /*useEffect(()=>{
+  
+  useEffect(()=>{
     console.log(form)
   },[form])
-  */
-
   
+
 
   const handleclick = (e) => {
 
         e.preventDefault();
-
-
-
-
 
 
     const obj1 = {
@@ -45,15 +44,16 @@ const Contact = () => {
     
     
     alert("form sumbit")
+    
 
   }
   return (
     <>
-      <div className='h-screen bg-blue-900'>    {/*main*/}
+      <div className='    h-screen     bg-blue-900'>    {/*main*/}
 
 
 
-        <div className=' text-4xl text-white  font-semibold text-center pt-12   ' >{/*box1*/}
+        <div className=' text-4xl text-white  font-semibold text-center p-20     ' >{/*box1*/}
           Contact
 
         </div>
@@ -62,7 +62,7 @@ const Contact = () => {
         <div className='flex  justify-center flex-col  items-center my-6   '>  {/*box2*/}
 
           <div className='  w-3xl px-6  gap-12' >{/*form*/}
-            <h3 className='text-4xl font-semibold text-white    '>Get In Touch</h3>
+            <h3 className='text-4xl font-semibold text-white  pb-15  '>Get In Touch</h3>
             <div className=' mt-5'>
 
               <form onSubmit={handleclick} className='flex flex-col gap-15' action="">
@@ -74,19 +74,19 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className=' h-80  flex justify-center pt-10 gap-96 w-full'>  {/* Contact*/}
+          <div className=' h-80  flex justify-center pt-10 gap-96 w-full'>  {/*Contact*/}
             <div className='   '>{/*address*/}
-              <h3 className='text-2xl font-semibold  text-white p-2' >My Address</h3>
+              <h3 className='text-2xl font-semibold  text-white p-7 ' >My Address</h3>
 
-              <h3 className='text-gray-100 text-l p-2'  >Pathankot,India</h3>
-              <h3 className='text-gray-100 text-l p-2' >+91-8837615825</h3>
-              <h3 className='text-gray-100 text-l p-2' >prabhjeet.s127@gmail.com</h3>
+              <h3 className='text-gray-100 text-xl p-3'  >Pathankot,India</h3>
+              <h3 className='text-gray-100 text-xl p-3' >+91-8837615825</h3>
+              <h3 className='text-gray-100 text-xl p-3' >prabhjeet.s127@gmail.com</h3>
 
             </div>
 
             <div className='' >{/*links*/}
               <h4 className='font-semibold text-2xl p-4 text-white' >Social-Links</h4>
-              <ul className=' flex gap-7'>
+              <ul className=' flex gap-4'>
                 <li className='w-10 h-10  '  ><a className='h-9 w-3' href="https://github.com/prabhjeet127s">
                   <FaGithub style={{ color: "white" }} size={40} />
                 </a></li>
@@ -97,16 +97,19 @@ const Contact = () => {
             </div>
 
           </div>
+          
         </div>
 
 
 
 
       </div>
+
             
 
 
-      
+                          
+
 
       
     </>

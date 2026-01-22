@@ -18,18 +18,18 @@ const Experience = () => {
  
 
 
-    <div className='p-[40px] bg-gray-100 h-screen' >
+    <div className='p-[40px] bg-gray-100 h-auto' >
 
       <div className=' m-2.5'>
-      <h2 className='m-30px  text-center text-4xl  font-bold ' >
+      <h2 className='m-30px p-10 text-center text-4xl  font-bold ' >
         Experience
       </h2>
       </div>
 
-      <div className=' flex flex-col justify-center' >
+      <div className=' flex flex-col h-auto justify-center' >
       {experience.map((item) => (
         <div
-          className=' bg-white  m-7 p-5 border-l-blue-400 border-l-4'
+          className=' bg-white  m-7 p-10 border-l-blue-400 border-l-4'
 
 
         >
