@@ -49,7 +49,7 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='   lg:h-screen md:h-auto sm:h-auto  bg-blue-900'>    {/*main*/}
+      <div className='   min-h-screen  bg-blue-900'>    {/*main*/}
 
 
 
