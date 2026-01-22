@@ -49,11 +49,11 @@ const Contact = () => {
   }
   return (
     <>
-      <div className='   min-h-screen  bg-blue-900'>    {/*main*/}
+      <div className='    h-screen     bg-blue-900'>    {/*main*/}
 
 
 
-        <div className=' text-4xl text-white  font-semibold text-center p-20 m-0    ' >{/*box1*/}
+        <div className=' text-4xl text-white  font-semibold text-center p-20     ' >{/*box1*/}
           Contact
 
         </div>
@@ -99,6 +99,8 @@ const Contact = () => {
           </div>
           
         </div>
+
+        {location.pathname !=  '/'    &&     <Footer/>}
 
 
 
