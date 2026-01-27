@@ -9,8 +9,9 @@ import Footer from "./components/Footer"
 import Applayout from "./components/Applayout"
 
 
-function App() {
 
+function App() {
+  
 
   return (
     <>
@@ -18,14 +19,14 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Applayout />}   >
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home scroll={scroll} />} />
           <Route path="/skill" element={<Skill />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
           <Route path="/project" element={<Project />} />
 
         </Route>
-                  <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact/>} />
 
 
 

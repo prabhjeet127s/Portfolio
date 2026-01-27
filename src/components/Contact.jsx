@@ -5,12 +5,19 @@ import Footer from './Footer';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
+
+
 
 
 
 
 
 const Contact = () => {
+
+
+
+
   const location = useLocation();
   console.log(location)
 
@@ -24,7 +31,6 @@ const Contact = () => {
   useEffect(() => {
     console.log(form)
   }, [form])
-
 
 
   const handleclick = (e) => {
@@ -94,26 +100,17 @@ const Contact = () => {
 
               </ul>
 
+
             </div>
+          
+
 
           </div>
 
         </div>
 
         {location.pathname != '/' && <Footer />}
-
-
-
-
       </div>
-
-
-
-
-
-
-
-
     </>
   )
 }

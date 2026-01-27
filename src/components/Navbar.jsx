@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 
 
 
-const Navbar = () => {
+const Navbar = ({scroll}) => {
 
 
 
 
   return (
-    <div>
+    <div ref={scroll} >
         <header className='h-[65vh] bg-cover bg-center bg-fixed flex flex-col items-center bg-blue-100'
         style={{ backgroundImage: "url(/mouse.jpg)" }}
       >

@@ -4,13 +4,13 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 
-const Education = () => {
+const Education = ({scroll}) => {
   
   return (
     <>
 
       
-      <div className='p-[40px]   bg-gray-100 h-auto' >
+      <div  ref={scroll}  className='p-[40px]   bg-gray-100 h-auto' >
 
 
         <div className='mb-10  p-10  text-center text-4xl  font-bold ' >

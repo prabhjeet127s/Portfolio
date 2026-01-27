@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import Navbar from './Navbar'
 
@@ -8,15 +8,31 @@ import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 
 
+
 const Applayout = () => {
+
+    
+        const scroll = useRef();
+  
+    const handleScroll = () => {
+      window.scrollTo({
+        left: 0,
+            top: scroll.current.offsetTop,
+            behavior:"smooth"
+
+        
+      });
+    };
+
+    
   return (
-    <div>
-        <Navbar/>
+    <div scroll={scroll} >
+        <Navbar  scroll={scroll}  />
 
          
-        <Outlet/>
+        <Outlet  />
 
-        <Footer/>
+        <Footer   handleScroll={handleScroll}/>
 
         
 

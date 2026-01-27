@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef }   from 'react'
 import { Link } from 'react-router-dom'
 import Skill from './Skill'
 import Footer from './Footer'
@@ -9,7 +9,13 @@ import Project from './Project'
 import Contact from './Contact'
 
 
+
+
 const Home = () => {
+  
+  
+    
+
 
 
   return (
